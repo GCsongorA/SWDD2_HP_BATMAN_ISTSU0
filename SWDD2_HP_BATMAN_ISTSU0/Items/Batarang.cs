@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ISTSU0_SwDD2_HP_Batman
 {
-    internal class Batarang : HandTool
+    internal class Batarang : HandTool,Item
     {
         int cost = 100;
         int utilityValue = 1;
 
-        public int Cost { get { return cost; } }
-        public int UtilityValue { get { return utilityValue; } }
+
+        public override int Cost { get { return cost; } }
+        public override int UtilityValue { get { return utilityValue; } }
     }
 }

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ISTSU0_SwDD2_HP_Batman
 {
-    internal class ExplosiveGel : HandTool
+    internal class ExplosiveGel : HandTool, Item
     {
         int cost = 500;
         int utilityValue = 2;
 
-        public int Cost { get { return cost; } }
-        public int UtilityValue { get { return utilityValue; } }
+        public override int Cost { get { return cost; } }
+        public override int UtilityValue { get { return utilityValue; } }
     }
 }
